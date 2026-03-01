@@ -1,4 +1,4 @@
-name: Weekly Docker Build & Push (GHCR)
+name: Weekly docker build & push to GHCR
 on:
   schedule:
     - cron: '0 2 * * 0'   # Every Sunday 02:00 UTC
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write   # Required for GHCR push
+      packages: write
 
     steps:
       - name: Checkout repository
