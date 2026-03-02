@@ -7,4 +7,4 @@ RUN apk add --no-cache dnsmasq
 
 USER dnsmasq
 
-ENTRYPOINT ["dnsmasq", "-k", "--conf-file=/etc/dnsmasq.conf"]
+ENTRYPOINT ["dnsmasq", "--keep-in-foreground", "--conf-file=/etc/dnsmasq.conf"]
