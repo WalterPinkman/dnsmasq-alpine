@@ -17,8 +17,8 @@ services:
     security_opt:
       - no-new-privileges:true
     ports:
-      - 10.10.10.11:1053:1053/udp
-      - 10.10.10.11:1053:1053/tcp
+      - 10.10.10.11:53:1053/udp
+      - 10.10.10.11:53:1053/tcp
     restart: unless-stopped
 ```
 
@@ -69,6 +69,6 @@ local=/internal/
 ```
 `dnsmasq.d/hosts`
 ```
-10.10.10.11 service1.domain.tld
-10.10.10.11 service1.domain.tld
+10.10.20.21 service1.domain.tld
+10.10.20.21 service2.domain.tld
 ```
